@@ -47,7 +47,7 @@ jobs:
             
             // 3) Parse the /done M command
             const cmd = context.payload.comment.body.trim();
-            const cm = /^\/done\s+(\d+)/.exec(cmd);
+            const cm = /^\s*\/done\s+(\d+)/.exec(cmd);
             if (!cm) return '-1';
             const num = parseInt(cm[1], 10);
 
