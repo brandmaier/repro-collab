@@ -132,7 +132,7 @@ module.exports = async function ({ github, context, core, env }) {
         '\n',
         '**Note**: If you are not completely sure how to do it, please refer to the GIF at the end of this comment.',
         '',
-        '**Afterwards:** Once you've suggested your change, return to ${context.payload.issue.html_url} and comment `/done 6` to continue',
+        `**Afterwards:** Once you've suggested your change, return to ${context.payload.issue.html_url} and comment \`/done 6\` to continue`,
         '',
         '<img src="https://raw.githubusercontent.com/aaronpeikert/repro-collab/main/assets/make_suggestion.gif" alt="Make Suggestion GIF">'
     ].filter(Boolean);
